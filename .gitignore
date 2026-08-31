@@ -1,0 +1,12 @@
+# ROS 2 colcon artifacts
+/build/
+/install/
+/log/
+src/build/
+src/install/
+src/log/
+
+# Editor / OS
+*.pyc
+__pycache__/
+.DS_Store

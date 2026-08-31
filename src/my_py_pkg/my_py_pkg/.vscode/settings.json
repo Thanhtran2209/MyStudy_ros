@@ -1,0 +1,13 @@
+{
+    "ros.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/home/thanhtd71/ros2_ws/install/px4_msgs/lib/python3.12/site-packages",
+        "/home/thanhtd71/ros2_ws/install/my_first_pkg/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/thanhtd71/ros2_ws/install/px4_msgs/lib/python3.12/site-packages",
+        "/home/thanhtd71/ros2_ws/install/my_first_pkg/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
