@@ -42,11 +42,21 @@ ament_target_dependencies(publish_node_custom_interface
   my_robot_interfaces
 )
 
+add_executable(reset_counter_client
+  src/reset_counter_client.cpp
+)
+ament_target_dependencies(reset_counter_client
+  rclcpp
+  example_interfaces
+  my_robot_interfaces
+)
+
 install(TARGETS
   my_first_node
   number_publisher
   number_counter
   publish_node_custom_interface
+  reset_counter_client
   DESTINATION lib/${PROJECT_NAME}
 )
 

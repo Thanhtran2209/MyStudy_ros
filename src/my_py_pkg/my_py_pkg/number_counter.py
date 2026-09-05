@@ -6,7 +6,7 @@ import rclpy
 from rclpy.node import Node
 
 from example_interfaces.msg import Int64
-from my_robot_interfaces.srv import ResetCounter  
+from my_robot_interfaces.srv import ResetCounter  # include the ResetCounter service definition
 
 
 
@@ -16,7 +16,7 @@ class NumberCounterNode(Node):
         super().__init__("number_counter")
         self.counter_ = 0 
 
-        self.number_subscriber_ = self.create_subscription(Int64, "number", self.callback_number, 10 )
+        self.number_subscriber_ = self.create_subscription(Int64, "number", self.callback_number, 10 ) # create subscriber to the "number" topic with a callback function 
 
         self.reset_counter_service_ = self.create_service(ResetCounter, "reset_counter", self.callback_reset_counter)
         self.get_logger().info("Number Counter has been started.")
