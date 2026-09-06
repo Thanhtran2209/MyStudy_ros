@@ -29,6 +29,7 @@ setup(
             "number_counter = my_py_pkg.number_counter:main",
             "temperature_publisher = my_py_pkg.publish_node_customInterface:main",
             "reset_counter_client = my_py_pkg.reset_counter_client:main",
+            "turtle_controller = my_py_pkg.turtle_controller:main",
         ],
     },
 )
