@@ -9,6 +9,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
 find_package(my_robot_interfaces REQUIRED)
+find_package(rclcpp_action REQUIRED)
+
 
 add_executable(my_first_node
   src/my_first_node.cpp
@@ -51,12 +53,22 @@ ament_target_dependencies(reset_counter_client
   my_robot_interfaces
 )
 
+add_executable(count_until_server_minimal
+  src/count_until_server_minimal.cpp
+)
+ament_target_dependencies(count_until_server_minimal
+  rclcpp
+  my_robot_interfaces
+  rclcpp_action
+)
+
 install(TARGETS
   my_first_node
   number_publisher
   number_counter
   publish_node_custom_interface
   reset_counter_client
+  count_until_server_minimal
   DESTINATION lib/${PROJECT_NAME}
 )
 

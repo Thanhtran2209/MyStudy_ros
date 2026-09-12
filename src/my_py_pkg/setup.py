@@ -30,6 +30,7 @@ setup(
             "temperature_publisher = my_py_pkg.publish_node_customInterface:main",
             "reset_counter_client = my_py_pkg.reset_counter_client:main",
             "turtle_controller = my_py_pkg.turtle_controller:main",
+            "count_until_server = my_py_pkg.count_until_server_minimal:main",
         ],
     },
 )
